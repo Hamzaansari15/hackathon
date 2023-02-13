@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.welcome_screen{
+    height: 100vh;
+    width: 390px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.welcome_screen img{
+    width: 300px;
+    margin: 12px 0px;
+}
+.welcome_second_name{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.welcome_second_name img{
+    width: 200px;
+}
+.start_btn{
+    width: 226px;
+    height: 69px;
+    background-color: #61B846;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin: 48px 0px;
+    word-spacing: 6px;
+    letter-spacing: 1px;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    font-size: 30px;
+}
+
+
+  /* SIGN UP */
+
+.signup_screen{
+    width: 100%;
+    height: 100vh;
+}
+.signup_name{
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.signup_name .first_image{
+    margin: 12px 0px;
+}
+.first_image{
+    width: 300px;
+}
+.signup_form{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signup_form div{
+    display: flex;
+    justify-content: space-around;
+    /* width: 248px; */
+    border-bottom: 1px solid #b8b8b8;
+    color: #b8b8b8;
+    margin: 12px 0px;
+    padding: 0px 4px;
+}
+.signup_form input{
+    border: none;
+    outline: none;
+}
+.signup_form input::placeholder{
+    color: #b8b8b8;
+}
+.signup_form input[type = text],input[type = number],input[type = email],input[type = password]{
+    color: #b8b8b8;
+    font-size: 20px;
+}
+.signup_btn{
+    width: 226px;
+    height: 69px;
+    background-color: #61B846;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin: 48px 0px 16px;
+    word-spacing: 6px;
+    letter-spacing: 1px;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    font-size: 30px;
+}
+.already_account{
+    font-size: 16px;
+    font-family: inter;
+    color: #024F9D;
+}

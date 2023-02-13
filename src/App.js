@@ -1,25 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import AdminFirstScreen from './component/adminscreen/AdminFirstScreen';
+import Login from './component/commonScreen/Login';
+import Signup from './component/commonScreen/Signup';
+import WelcomeScreen from './component/commonScreen/WelcomeScreen';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AdminSecondScreen from './component/adminscreen/AdminSecondScreen';
+import AdminSetting from './component/adminscreen/AdminSetting';
+import AdminLastScreen from './component/adminscreen/AdminLastScreen';
+import Setting from './component/userPage/UserSetting';
+import ShoppingCart from './component/userPage/ShoppinCart';
+import Home from './component/userPage/Home';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<WelcomeScreen />} />
+        <Route path='/Login' element={<Login />} />
+        <Route path='/Signup' element={<Signup />} />
+        <Route path='/admin' element={<AdminFirstScreen />} />
+        <Route path='/addproduct' element={<AdminSecondScreen />} />
+        <Route path='/setting' element={<AdminSetting />} />
+        <Route path='/order' element={<AdminLastScreen />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
